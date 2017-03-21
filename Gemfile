@@ -7,6 +7,7 @@ gem 'rails', '4.2.6'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
+  gem 'simplecov', :require => false
   gem 'sqlite3'
   gem 'byebug'
   gem 'database_cleaner', '1.4.1'
@@ -17,6 +18,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'simplecov', :require => false
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
 end
